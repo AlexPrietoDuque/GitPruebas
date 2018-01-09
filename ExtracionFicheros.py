@@ -31,6 +31,8 @@ def ObtenerFicheros(path):
 
          list.append(fileinfo)
 
+         # asdasdasd222222
+
       return list
 
    except Exception as e:
