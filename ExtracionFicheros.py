@@ -22,6 +22,7 @@ def ObtenerFicheros(path):
 
 
          fileinfo=entity.File(Nombre,FechaActua,Path,"","Prueba") # lechu aprende a gitearr
+         #asdsadasdsad
 
          list.append('lechu no sigue los amendamientos del PEP8')
 
@@ -43,11 +44,7 @@ def main():
 
    pass
 
-
-
-
-
-
+#sdfsdfsdfsdfsdfsdfsdfdsfds
 
 if __name__ == '__main__':
    main()
