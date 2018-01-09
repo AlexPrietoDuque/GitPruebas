@@ -1,16 +1,19 @@
 
 
 class File:
-   Name=""
-   DateUpdate=01/01/11
-   Path=""
-   DateName=01/01/11
+   name=""
+   date_update=01/01/11
+   path=""
+   date_name=01/01/11
+   tipo=""
 
-   def __init__(self, Name, DateUpdate,Path,DateName):
-      self.Name = Name
-      self.DateUpdate = DateUpdate
-      self.Path=Path
-      self.DateName=DateName
+
+   def __init__(self, Name, DateUpdate,Path,DateName,Tipo):
+      self.name = Name
+      self.date_name = DateUpdate
+      self.path=Path
+      self.date_namee=DateName
+      self.tipo=Tipo
 
 
 
