@@ -22,6 +22,7 @@ def ObtenerFicheros(path):
 
 
          fileinfo=entity.File(Nombre,FechaActua,Path,"","Prueba") # lechu aprende a gitearr
+         #asdsadasdsad
 
          list.append(fileinfo)
 
