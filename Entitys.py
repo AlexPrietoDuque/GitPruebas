@@ -6,8 +6,6 @@ class File:
    path=""
    date_name=01/01/11
    tipo=""
-
-
    def __init__(self, Name, DateUpdate,Path,DateName,Tipo):
       self.name = Name
       self.date_name = DateUpdate
@@ -16,5 +14,6 @@ class File:
       self.tipo=Tipo
 
 
-
+class TiposFiles:
+   tipos_ficheros = ('demanda', 'generacion', 'intercambio', 'aro_balance');
 
