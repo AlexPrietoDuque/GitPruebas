@@ -21,7 +21,7 @@ def ObtenerFicheros(path):
          m=re.match(Nombre,"[0-9]{11}")
 
 
-         fileinfo=entity.File(Nombre,FechaActua,Path,"","Prueba") # lechu aprende a gitear
+         fileinfo=entity.File(Nombre,FechaActua,Path,"","Prueba") # lechu aprende a gitearr
 
          list.append(fileinfo)
 
