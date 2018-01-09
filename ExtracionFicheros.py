@@ -23,6 +23,8 @@ def ObtenerFicheros(path):
 
          fileinfo=entity.File(Nombre,FechaActua,Path,"","Prueba") # lechu aprende a gitearr
 
+         list.append('lechu no sigue los amendamientos del PEP8')
+
          list.append(fileinfo)
 
       return list
