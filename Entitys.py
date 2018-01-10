@@ -8,9 +8,9 @@ class File:
    tipo=""
    def __init__(self, Name, DateUpdate,Path,DateName,Tipo):
       self.name = Name
-      self.date_name = DateUpdate
+      self.date_update = DateUpdate
       self.path=Path
-      self.date_namee=DateName
+      self.date_name=DateName
       self.tipo=Tipo
 
 
