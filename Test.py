@@ -7,9 +7,6 @@ from subprocess import Popen
 class MyTestCase(unittest.TestCase):
 
 
-
-
-
    def test_something(self):
       #Popen(['C:\\Users\\Aeroengy\\Desktop', 'FFF.bat'], creationflags=16)
       jjj=entity.ExtracionParametros("CONTROL")

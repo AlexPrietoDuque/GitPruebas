@@ -17,18 +17,22 @@ class TiposFiles:
    tipos_ficheros = ('demanda', 'generacion', 'intercambio', 'aro_balance');
 
 class ParamControl:
-   modo_ejecucio=str
+   modo_ejecucion=str
    manual=bool
    tipo_escenario=str
 
-def ExtracionParametros (seccion):
+   def __init__(self, modo_ejecucion, manual, tipo_escenario):
+      self.modo_ejecucion = modo_ejecucion
+      self.manual = manual
+      self.tipo_escenario = tipo_escenario
 
+def ExtracionParametros (seccion):
    param={}
-   ggg=13
    try:
 
       ruta_archivo="config.cfg"
       cfg = ConfigParser.ConfigParser()
+      cfg.optionxform = str
       cfg.read([ruta_archivo])
 
       if not cfg.read([ruta_archivo]):
@@ -37,7 +41,6 @@ def ExtracionParametros (seccion):
       else:
 
          secc=cfg.sections()
-
          secc=[elem for elem in secc if str.lower(elem) in str.lower(seccion)]
 
          if not cfg.has_section(seccion):
@@ -47,8 +50,6 @@ def ExtracionParametros (seccion):
 
    except Exception as e:
       print "Unexpected error: Mensaje: {}, TipoError: {}".format(e.message, e.__class__)
-
-
 
    return param
 
