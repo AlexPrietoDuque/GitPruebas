@@ -6,6 +6,7 @@ import re
 from datetime import datetime as dt
 
 #11:26
+#11:39
 #Commint 11:27
 def ObtenerFicheros(path,formato):
 
@@ -57,8 +58,6 @@ def ExtaerTipoArchivo(nombre):
    return  tipo
 
 def main():
-
-
    files_demanda = ObtenerFicheros("C:\Generador_Escenarios\GE_PSSE\Fich_Entrada\\eSIOS\Demanda","txt")
    #Ordeno el listado por fecha la lista de ficheros de demanda
    files_demanda.sort(key=lambda x: x.date_update, reverse=True)
