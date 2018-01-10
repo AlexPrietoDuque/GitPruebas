@@ -43,7 +43,6 @@ def ObtenerFicheros(path,formato):
       #print "Unexpected error: {}, {}".format(e,e.__class__)
 
 
-
    return list
 
 def ExtaerTipoArchivo(nombre):

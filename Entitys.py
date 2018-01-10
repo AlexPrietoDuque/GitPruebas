@@ -51,7 +51,8 @@ def ExtracionParametros (seccion):
    except Exception as e:
       print "Unexpected error: Mensaje: {}, TipoError: {}".format(e.message, e.__class__)
 
-   return param
+   finally:
+      return param
 
 
 
