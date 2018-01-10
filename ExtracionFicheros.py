@@ -6,6 +6,7 @@ import re
 from datetime import datetime as dt
 
 #11:26
+#11:39
 def ObtenerFicheros(path,formato):
 
    ficheros = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
