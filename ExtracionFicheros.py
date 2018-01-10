@@ -57,9 +57,17 @@ def ExtaerTipoArchivo(nombre):
    return  tipo
 
 def main():
-   files_demanda = ObtenerFicheros("C:\Generador_Escenarios\GE_PSSE\Fich_Entrada\\eSIOS\Demanda","txt")
 
-   files_demanda()
+
+   files_demanda = ObtenerFicheros("C:\Generador_Escenarios\GE_PSSE\Fich_Entrada\\eSIOS\Demanda","txt")
+   #Ordeno el listado por fecha la lista de ficheros de demanda
+   files_demanda.sort(key=lambda x: x.date_update, reverse=True)
+
+   RUTA_PY,_= os.path.split(__file__)
+   RUTA_GE = os.path.normpath(os.path.join(RUTA_PY, r'..'))
+
+
+
 
    pass
 
